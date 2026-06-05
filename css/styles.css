@@ -1,0 +1,22 @@
+/* =====================================================
+   styles.css — MANGASTORE
+   Completa los estilos según la Guia_de_Estilos_MANGASTORE.docx
+   ===================================================== */
+
+/* Reset base */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Tu código va aquí */
