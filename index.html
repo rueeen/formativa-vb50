@@ -125,64 +125,85 @@
       </aside>
     </article>
     <!-- BLOG -->
-    <h2>Blog</h2>
+    <article>
+      <h2 class="centrar-texto">Blog</h2>
 
-    <img src="img/blog1.jpg" alt="Portada artículo Slam Dunk">
-    <h3>Slam Dunk</h3>
-    <blockquote>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste distinctio, quidem,
-      consequuntur, repellat eaque esse voluptatum sed molestias tempora pariatur? Vel nemo consequuntur
-      placeat quo beatae ipsa natus eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-      dolorum fugit dolor dolore, amet corporis sit explicabo distinctio doloribus fuga magnam cum autem,
-      aspernatur, enim quasi porro ducimus consequatur quas? Lorem ipsum dolor sit, amet consectetur
-      adipisicing elit. Accusantium doloribus ducimus veritatis sint animi? Eaque debitis reprehenderit
-      hic facere dolorem voluptatem, pariatur quo numquam nostrum ducimus dicta? Quo, facilis quisquam.
-    </blockquote>
-    <p>Por Perico los Palotes</p>
-    <time datetime="2025-09-20">20/09/2025</time>
+      <section class="entrada-blog">
+        <div class="blog-imagen">
+          <img src="img/blog1.jpg" alt="Portada artículo Slam Dunk">
+        </div>
 
-    <img src="img/blog2.jpg" alt="Portada artículo Berserk">
-    <h3>Berserk</h3>
-    <blockquote>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste distinctio, quidem,
-      consequuntur, repellat eaque esse voluptatum sed molestias tempora pariatur? Vel nemo consequuntur
-      placeat quo beatae ipsa natus eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-      dolorum fugit dolor dolore, amet corporis sit explicabo distinctio doloribus fuga magnam cum autem,
-      aspernatur, enim quasi porro ducimus consequatur quas?
-    </blockquote>
-    <p>Por María las Petunias</p>
-    <time datetime="2025-09-20">20/09/2025</time>
+        <div class="blog-texto">
+          <h3>Slam Dunk</h3>
+          <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste distinctio, quidem,
+            consequuntur, repellat eaque esse voluptatum sed molestias tempora pariatur? Vel nemo consequuntur
+            placeat quo beatae ipsa natus eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+            dolorum fugit dolor dolore, amet corporis sit explicabo distinctio doloribus fuga magnam cum autem,
+            aspernatur, enim quasi porro ducimus consequatur quas? Lorem ipsum dolor sit, amet consectetur
+            adipisicing elit. Accusantium doloribus ducimus veritatis sint animi? Eaque debitis reprehenderit
+            hic facere dolorem voluptatem, pariatur quo numquam nostrum ducimus dicta? Quo, facilis quisquam.
+          </blockquote>
+          <p>Por Perico los Palotes</p>
+          <time datetime="2025-09-20">20/09/2025</time>
+        </div>
+      </section>
+
+      <section class="entrada-blog">
+        <div class="blog-imagen">
+          <img src="img/blog2.jpg" alt="Portada artículo Berserk">
+        </div>
+        <div class="blog-texto">
+          <h3>Berserk</h3>
+          <blockquote>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt iste distinctio, quidem,
+            consequuntur, repellat eaque esse voluptatum sed molestias tempora pariatur? Vel nemo consequuntur
+            placeat quo beatae ipsa natus eius! Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+            dolorum fugit dolor dolore, amet corporis sit explicabo distinctio doloribus fuga magnam cum autem,
+            aspernatur, enim quasi porro ducimus consequatur quas?
+          </blockquote>
+          <p>Por María las Petunias</p>
+          <time datetime="2025-09-20">20/09/2025</time>
+        </div>
+      </section>
+    </article>
 
     <!-- SOBRE NOSOTROS -->
-    <h2>Sobre Nosotros</h2>
-    <p>
-      En <strong>MANGASTORE</strong> nos apasiona el mundo del manga y el cómic.
-      Desde nuestros inicios, buscamos acercar a los lectores las mejores historias japonesas
-      y ediciones exclusivas. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-      Quibusdam minus ab distinctio labore voluptates earum accusamus maiores dicta, laborum
-      quidem ullam beatae, repellendus porro reprehenderit. Ducimus, natus? Quisquam, aliquid.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nostrum dolorum cumque
-      aspernatur molestiae harum debitis expedita ullam odio nemo. Commodi assumenda numquam id
-      iusto saepe alias ipsum similique molestias.
-    </p>
+    <article>
+      <h2 class="centrar-texto">Sobre Nosotros</h2>
+      <p class="centrar-texto">
+        En <strong>MANGASTORE</strong> nos apasiona el mundo del manga y el cómic.
+        Desde nuestros inicios, buscamos acercar a los lectores las mejores historias japonesas
+        y ediciones exclusivas. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Quibusdam minus ab distinctio labore voluptates earum accusamus maiores dicta, laborum
+        quidem ullam beatae, repellendus porro reprehenderit. Ducimus, natus? Quisquam, aliquid.
+      </p>
+      <p class="centrar-texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nostrum dolorum cumque
+        aspernatur molestiae harum debitis expedita ullam odio nemo. Commodi assumenda numquam id
+        iusto saepe alias ipsum similique molestias.
+      </p>
+    </article>
 
     <!-- CONTACTO -->
-    <h2>Contáctanos</h2>
-    <form action="#" method="post">
-      <label for="nombre">Nombre</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+    <article>
+      <h2 class="centrar-texto">Contáctanos</h2>
 
-      <label for="email">Correo electrónico</label>
-      <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+      <section>
+        <form action="#" method="post" class="formulario">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-      <label for="mensaje">Mensaje</label>
-      <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
 
-      <button type="submit">Enviar</button>
-    </form>
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
 
+          <button class="button" type="submit">Enviar</button>
+      </section>
+      </form>
+    </article>
   </main>
   <!-- FOOTER -->
   <footer class="contenedor bg-negro">

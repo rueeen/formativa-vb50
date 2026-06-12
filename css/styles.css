@@ -6,7 +6,8 @@
 /* Reset base */
 html {
   box-sizing: border-box;
-  font-size: 62.5%; /*Para trabajar 1rem = 10px*/
+  font-size: 62.5%;
+  /*Para trabajar 1rem = 10px*/
 }
 
 *,
@@ -16,19 +17,24 @@ html {
 }
 
 img {
-  max-width: 100%; /*Esto permite que las imagenes cambien tamaño segun el contenedor en el que estan*/
+  max-width: 100%;
+  /*Esto permite que las imagenes cambien tamaño segun el contenedor en el que estan*/
 }
 
 /* Tu código va aquí */
-body{
+body {
   background-image: url("../img/background.jpg");
-  position: center; /*La imagen se centra*/
-  background-attachment: fixed; /*La imagen quede pegada en el fondo*/
-  background-size: cover; /*Ajusta la imagen para calzar en el ancho del contenedor donde esta*/
-  font-size: 1.6rem; /*Para trabajar 1rem = 10px*/
+  position: center;
+  /*La imagen se centra*/
+  background-attachment: fixed;
+  /*La imagen quede pegada en el fondo*/
+  background-size: cover;
+  /*Ajusta la imagen para calzar en el ancho del contenedor donde esta*/
+  font-size: 1.6rem;
+  /*Para trabajar 1rem = 10px*/
 }
 
-.navbar{
+.navbar {
   background-color: black;
   display: flex;
   justify-content: space-between;
@@ -36,7 +42,7 @@ body{
   padding: 1.5rem 2rem;
 }
 
-.contenedor{
+.contenedor {
   margin: 0 auto;
   width: 140rem;
 }
@@ -45,54 +51,56 @@ body{
   display: flex;
 }
 
-.navbar-brand a{
+.navbar-brand a {
   color: white;
   font-size: 3.8rem;
-  text-decoration: none; /*QUita la decoracion del texto*/
+  text-decoration: none;
+  /*QUita la decoracion del texto*/
 }
 
-.items li{
-  list-style: none; /*Elimina la viñeta o numeracion del listo*/
+.items li {
+  list-style: none;
+  /*Elimina la viñeta o numeracion del listo*/
   margin-left: 1.2rem;
 }
 
-.items li a{
+.items li a {
   color: white;
   text-decoration: none;
   font-size: 2rem;
 }
 
-.nuestros-productos{
+.nuestros-productos {
   display: flex;
 }
 
-.nuestros-productos section{
+.nuestros-productos section {
   flex-basis: 70%;
 }
 
-.nuestros-productos aside{
+.nuestros-productos aside {
   flex-basis: 30%;
 }
 
-.bg-blanco{
+.bg-blanco {
   background-color: white;
 }
 
-.bg-negro{
+.bg-negro {
   background-color: black;
   color: white;
 }
 
-.centrar-texto{
+.centrar-texto {
   text-align: center;
 }
 
-.productos{
+.productos {
   display: flex;
   justify-content: space-around;
 }
 
-.card{
+.card {
   flex-basis: 25%;
   padding: 3rem;
   display: flex;
@@ -100,20 +108,20 @@ body{
   justify-content: space-between;
 }
 
-.card-img{
+.card-img {
   flex-basis: 60%;
 }
 
-.card-img img{
+.card-img img {
   height: 30rem;
   object-fit: cover;
 }
 
-.card-descripcion{
+.card-descripcion {
   flex-basis: 40%;
 }
 
-.mas-vendidos li{
+.mas-vendidos li {
   display: flex;
   align-items: center;
   padding: 2rem 0;
@@ -121,37 +129,37 @@ body{
   border-bottom: solid .1rem #ddd;
 }
 
-.mas-vendidos li div{
+.mas-vendidos li div {
   flex-basis: 20%;
 }
 
-.mas-vendidos li span{
+.mas-vendidos li span {
   margin-left: .5rem;
 }
 
-.footer-info{
+.footer-info {
   display: flex;
   justify-content: space-around;
 }
 
-.footer-info div{
+.footer-info div {
   flex-basis: calc(25% - 6rem);
 }
 
-.footer-contacto{
+.footer-contacto {
   padding: 0;
 }
 
-.footer-contacto li{
+.footer-contacto li {
   list-style: none;
 }
 
-.footer-contacto li a{
+.footer-contacto li a {
   text-decoration: none;
   color: white;
 }
 
-.barra-inferior{
+.barra-inferior {
   display: flex;
   justify-content: space-between;
   padding: 0 4rem;
@@ -169,7 +177,55 @@ body{
   margin-left: 5rem;
 }
 
-.barra-inferior ul li a{
+.barra-inferior ul li a {
   text-decoration: none;
   color: white;
+}
+
+.entrada-blog {
+  display: flex;
+  background-color: lightcyan;
+  margin: 2rem 4rem;
+  border-radius: .9rem;
+  height: 40rem;
+  align-items: center;
+}
+
+.blog-imagen {
+  flex-basis: 20%;
+}
+
+.blog-imagen img {
+  object-fit: cover;
+  height: 40rem;
+}
+
+.blog-texto {
+  flex-basis: 80%;
+  padding: 0 4rem;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  width: 60rem;
+  margin: 0 auto;
+}
+
+.formulario label {
+  margin-top: 1rem;
+}
+
+.formulario textarea,
+input {
+  border-radius: .5rem;
+  padding: 1rem;
+  border: #ccc solid;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  margin: 1rem 0;
+  border-radius: .5rem;
 }
