@@ -6,7 +6,7 @@
 /* Reset base */
 html {
   box-sizing: border-box;
-  font-size: 62.5%;
+  font-size: 62.5%; /*Para trabajar 1rem = 10px*/
 }
 
 *,
@@ -16,7 +16,160 @@ html {
 }
 
 img {
-  max-width: 100%;
+  max-width: 100%; /*Esto permite que las imagenes cambien tamaño segun el contenedor en el que estan*/
 }
 
 /* Tu código va aquí */
+body{
+  background-image: url("../img/background.jpg");
+  position: center; /*La imagen se centra*/
+  background-attachment: fixed; /*La imagen quede pegada en el fondo*/
+  background-size: cover; /*Ajusta la imagen para calzar en el ancho del contenedor donde esta*/
+  font-size: 1.6rem; /*Para trabajar 1rem = 10px*/
+}
+
+.navbar{
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+}
+
+.contenedor{
+  margin: 0 auto;
+  width: 140rem;
+}
+
+.navbar-items ul {
+  display: flex;
+}
+
+.navbar-brand a{
+  color: white;
+  font-size: 3.8rem;
+  text-decoration: none; /*QUita la decoracion del texto*/
+}
+
+.items li{
+  list-style: none; /*Elimina la viñeta o numeracion del listo*/
+  margin-left: 1.2rem;
+}
+
+.items li a{
+  color: white;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+.nuestros-productos{
+  display: flex;
+}
+
+.nuestros-productos section{
+  flex-basis: 70%;
+}
+
+.nuestros-productos aside{
+  flex-basis: 30%;
+}
+
+.bg-blanco{
+  background-color: white;
+}
+
+.bg-negro{
+  background-color: black;
+  color: white;
+}
+
+.centrar-texto{
+  text-align: center;
+}
+
+.productos{
+  display: flex;
+  justify-content: space-around;
+}
+
+.card{
+  flex-basis: 25%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-img{
+  flex-basis: 60%;
+}
+
+.card-img img{
+  height: 30rem;
+  object-fit: cover;
+}
+
+.card-descripcion{
+  flex-basis: 40%;
+}
+
+.mas-vendidos li{
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  margin-right: 2rem;
+  border-bottom: solid .1rem #ddd;
+}
+
+.mas-vendidos li div{
+  flex-basis: 20%;
+}
+
+.mas-vendidos li span{
+  margin-left: .5rem;
+}
+
+.footer-info{
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-info div{
+  flex-basis: calc(25% - 6rem);
+}
+
+.footer-contacto{
+  padding: 0;
+}
+
+.footer-contacto li{
+  list-style: none;
+}
+
+.footer-contacto li a{
+  text-decoration: none;
+  color: white;
+}
+
+.barra-inferior{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  margin: 0 1rem;
+  border-top: solid .1rem #ddd;
+}
+
+.barra-inferior ul {
+  display: flex;
+}
+
+
+.barra-inferior ul li {
+  list-style: none;
+  margin-left: 5rem;
+}
+
+.barra-inferior ul li a{
+  text-decoration: none;
+  color: white;
+}
